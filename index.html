@@ -1,433 +1,284 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Sachin Thakur - Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/flipcard.css" />
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sachin Thakur — Robotics &amp; ML Engineer</title>
+  <meta name="description" content="Sachin Thakur builds perception and learning systems for robots: vision transformers, 6-DoF pose estimation, Isaac Sim digital twins, and the hardware they run on." />
+  <meta property="og:title" content="Sachin Thakur — Robotics &amp; ML Engineer" />
+  <meta property="og:description" content="Perception and learning systems for robots, from vision transformers to Isaac Sim digital twins and real hardware." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thakur-sachin.github.io/sachin_portfolio/" />
+  <meta property="og:image" content="https://thakur-sachin.github.io/sachin_portfolio/img/trex.jpg" />
+  <meta name="theme-color" content="#E7EAEE" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2312203A'/%3E%3Cpath d='M7 25 L14 15 L24 9' stroke='%23E7EAEE' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='14' cy='15' r='3' fill='%233366F0'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900;1,62..125,300..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
 
-		<!-- Header -->
-			<div id="header">
+<a class="skip" href="#main">Skip to content</a>
 
-				<div class="top">
+<header class="topbar">
+  <a class="mark" href="#top" aria-label="Sachin Thakur, back to top">Sachin Thakur</a>
+  <nav aria-label="Sections">
+    <a href="#work">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="profile_pic"><img src="images\sachin_profile.jpg" alt="" class="fixed-image-profile"/></span>
-							<h1 id="title">Sachin Thakur</h1>
-							<p>ML Scientist & Robotics Engineer</p>
-						</div>
+<main id="main">
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#experience" id="experience-link"><span class="icon solid fa-briefcase">Experience</span></a></li>
-								<li><a href="#projects" id="projects-link"><span class="icon solid fa-cogs">Projects</span></a></li>
-								<li><a href="#publications" id="publications-link"><span class="icon solid fa-cogs">Publications</span></a></li>
-								<li><a href="#education" id="education-link"><span class="icon solid fa-graduation-cap">Education</span></a></li>
-								<li><a href="#skills" id="skills-link"><span class="icon solid fa-code">Skills</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
+  <!-- Hero: the arm on the right follows the pointer via two-link inverse kinematics -->
+  <section class="hero" id="top">
+    <div class="hero-copy">
+      <h1>Sachin<br />Thakur</h1>
+      <p class="role">Robotics &amp; machine learning engineer</p>
+      <p class="lede">I build perception and learning systems for robots: vision transformers, 6-DoF pose estimation, Isaac Sim digital twins, and the hardware they run on. Currently at Luminous Robotics in Boston, working with AWS and NVIDIA on a Physical AI challenge.</p>
+      <div class="actions">
+        <a class="btn btn-solid" href="Sachin_Thakur_Resume.pdf" target="_blank" rel="noopener">View résumé</a>
+        <a class="btn" href="mailto:sachint.2306@gmail.com">Email me</a>
+        <span class="socials">
+        <a class="icon-link" href="https://github.com/thakur-sachin" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+        </a>
+        <a class="icon-link" href="https://www.linkedin.com/in/sachin-thakur-22558017b/" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+        </a>
+        </span>
+      </div>
+    </div>
+    <figure class="hero-arm" aria-hidden="true">
+      <canvas id="arm"></canvas>
+      <figcaption id="arm-readout"><span>θ₁ <b id="t1">0°</b></span><span>θ₂ <b id="t2">0°</b></span></figcaption>
+    </figure>
+  </section>
 
-				</div>
+  <!-- Highlights: the three outcomes a reader should leave with -->
+  <section class="proof" aria-label="Highlights">
+    <p><strong>1 of 9 companies</strong> selected worldwide for the AWS × NVIDIA Physical AI program, on a data pipeline I co-built.</p>
+    <p><strong>300 → 110 ms</strong> end-to-end inference latency on a production vision transformer.</p>
+    <p><strong>$15,000 grant</strong> from BITSAA to build a low-cost autonomous quadruped.</p>
+  </section>
 
-				<div class="bottom">
+  <!-- Experience -->
+  <section class="block" id="work">
+    <h2>Experience</h2>
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://linkedin.com/in/sachin-thakur-22558017b" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/thakur-sachin" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="mailto:sachint.2306@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							<li><a href="https://drive.google.com/file/d/1iivG_KDUKG4dPA5052a6hlXF2bcUVre2/view?usp=sharing" target="_blank" class="icon brands fa-google-drive"><span class="label">Resume</span></a></li>
-						</ul>
+    <article class="job">
+      <div class="job-when">Jan 2026 – now<br /><span>South Boston, MA</span></div>
+      <div class="job-body">
+        <h3>Robotics Engineer, ML <span class="at">Luminous Robotics</span></h3>
+        <ul>
+          <li>Co-built a Physical AI data-collection pipeline that helped the company win an AWS and NVIDIA grant; we were one of nine companies selected globally and now work directly with both teams on the challenge.</li>
+          <li>Building digital twins in NVIDIA Isaac Sim for robot simulation, synthetic data collection, and testing as part of a Digital Twin fellowship.</li>
+          <li>Implemented and fine-tuned 6-DoF pose estimators (FoundationPose, EfficientPose, CenterPose, DOPE) for robust real-world performance.</li>
+          <li>Support the full robot stack: ROS 2, networking, deployment, calibration, and debugging.</li>
+        </ul>
+      </div>
+    </article>
 
-				</div>
+    <article class="job">
+      <div class="job-when">Jun 2024 – Dec 2025<br /><span>Bedford, MA</span></div>
+      <div class="job-body">
+        <h3>Machine Learning Scientist <span class="at"><a href="https://www.oxipitalai.com/">Oxipital AI</a></span></h3>
+        <ul>
+          <li>Implemented ReMaX-inspired panoptic segmentation optimizations (ReMask + ReClass) in PyTorch: training time down from 4 to 3 days, PQ held, false positives down 15%.</li>
+          <li>Developed a DINOv3-style self-supervised backbone and the data infrastructure for training a foundation vision model.</li>
+          <li>Redesigned the vision transformer for memory-efficient, variable-resolution training; higher-resolution inputs raised PQ by 5% at comparable cost.</li>
+          <li>Designed binary and sparse HDF5 representations for high-volume sensor data, cutting storage by about 60% while speeding up training and inference.</li>
+          <li>Led the inference pipeline redesign across GPU, container, and on-prem environments:</li>
+        </ul>
+        <div class="latency" role="img" aria-label="End-to-end inference latency: 300 milliseconds at baseline, 200 after FP16 and ONNX/TensorRT, about 110 after Nsight-guided tuning.">
+          <div class="lat-row"><span class="lat-label">Baseline</span><span class="lat-bar" style="--w:100%"></span><span class="lat-val">300 ms</span></div>
+          <div class="lat-row"><span class="lat-label">FP16 + ONNX / TensorRT</span><span class="lat-bar" style="--w:66.7%"></span><span class="lat-val">200 ms</span></div>
+          <div class="lat-row"><span class="lat-label">Nsight-guided kernel tuning</span><span class="lat-bar lat-best" style="--w:36.7%"></span><span class="lat-val">~110 ms</span></div>
+        </div>
+      </div>
+    </article>
 
-			</div>
+    <article class="job">
+      <div class="job-when">Jun 2022 – Jun 2023<br /><span>Bengaluru, India</span></div>
+      <div class="job-body">
+        <h3>Analyst, AI &amp; Data Engineering <span class="at">Deloitte USI</span></h3>
+        <ul>
+          <li>Delivered end-to-end time-series forecasting systems and Monte Carlo risk models used in multi-million-dollar decisions.</li>
+          <li>Deployed models on AWS SageMaker with auto-scaling; AWS AI/ML certified.</li>
+        </ul>
+      </div>
+    </article>
 
-		<!-- Main -->
-			<div id="main">
+    <article class="job">
+      <div class="job-when">Nov – Dec 2021<br /><span>Braunschweig, Germany</span></div>
+      <div class="job-body">
+        <h3>Visiting Researcher <span class="at">TU Braunschweig</span></h3>
+        <ul>
+          <li>Mentored 20 students from Germany and India on sustainable EV business models and explored PLC applications for Industry 4.0.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+  <!-- Projects -->
+  <section class="block" id="projects">
+    <h2>Projects</h2>
 
-							<header>
-								<h3 class="alt">Hi! I'm <strong>Sachin Thakur</strong><br />
-								<strong>A Machine Learning Scientist</strong> & <strong>Robotics Engineer</strong></h3>
-								<p>Machine Learning Scientist with over 2 years of experience building scalable computer vision systems and autonomous robotics solutions.</br>
-									I specialize in optimizing deep learning pipelines for inference, deploying containerized ML services, and advancing vision transformer architectures. </br>
-									With a strong foundation in MLOps, cloud platforms, and robotics simulation, I bring a practical, results-driven approach to machine learning.</p>
-							</header>
+    <article class="feature">
+      <img src="img/trex.jpg" alt="Trex, a 3D-printed bipedal robot with a dinosaur shell, standing on a lab table" width="960" height="1280" loading="lazy" />
+      <div class="feature-text">
+        <h3>Trex, an adaptive bipedal robot</h3>
+        <p>A dinosaur-shaped biped designed from scratch in Fusion 360, converted to URDF, and trained to walk with deep reinforcement learning in Isaac Sim before moving to hardware.</p>
+        <ul>
+          <li>Edge-to-cloud pipeline on Jetson and Raspberry Pi, carrying IMU, motor telemetry, and control signals.</li>
+          <li>Real-time sensor fusion, validated in simulation and hardware-in-the-loop tests.</li>
+          <li>Data capture designed around downstream ML and control requirements.</li>
+        </ul>
+        <p class="tags">Isaac Sim, ROS 2, PyTorch, PPO / A3C, Docker, URDF</p>
+      </div>
+    </article>
 
-							<footer>
-								<a href="#experience" class="button scrolly">Explore My Professional Experience</a>
-							</footer>
+    <article class="feature feature-flip">
+      <img src="img/foosball-cad.jpg" alt="CAD model of a foosball table with motorized linear and rotary actuators on every rod" width="1400" height="948" loading="lazy" />
+      <div class="feature-text">
+        <h3>Foosball AI at Columbia</h3>
+        <p>A robot that plays professional foosball. I built the high-fidelity Isaac Sim simulator, with realistic table dynamics and contact modeling, used to train the RL agents that drive motorized rods on the real table.</p>
+        <ul>
+          <li>Physical table modeled from CAD to URDF so policies transfer from sim to real.</li>
+          <li>Soft actor-critic agents, servo control, and mechanical design split across three teams.</li>
+          <li>Presented as an end-to-end deep RL platform for competitive physical systems (NeurIPS 2024).</li>
+        </ul>
+        <p class="tags">Isaac Lab, C++, Python, SAC, CAD</p>
+        <p class="links"><a href="https://github.com/thakur-sachin/Foosball_CU">Source on GitHub</a></p>
+      </div>
+    </article>
 
-							<footer>
-								<a href="#projects" class="button scrolly">Explore My Projects</a>
-							</footer>
+    <div class="grid">
+      <article class="tile">
+        <img src="img/delivery-swarm.jpg" alt="Overhead camera view of an arena with ArUco-tagged delivery robots" width="1400" height="665" loading="lazy" />
+        <h3>Collaborative delivery robots</h3>
+        <p>A swarm of small robots that split up package deliveries, using multi-agent path planning and task allocation with overhead mono-camera SLAM. Built for a national robotics competition.</p>
+        <p class="tags">OpenCV, SLAM, path planning, microcontrollers</p>
+      </article>
+      <article class="tile">
+        <img src="img/autonomous-car.jpg" alt="RViz view of a vehicle's planned path and LiDAR obstacles" width="1400" height="681" loading="lazy" />
+        <h3>Autonomous driving stack</h3>
+        <p>A modular self-driving pipeline: CNN lane detection, YOLO object recognition, and fusion of LiDAR, RGB camera, and GPS for real-time path planning in ROS 2.</p>
+        <p class="tags">ROS 2, YOLO, sensor fusion, NumPy</p>
+      </article>
+      <article class="tile">
+        <img src="img/detector.jpg" alt="Object detector output with bounding boxes at 97 and 99 percent confidence" width="1267" height="872" loading="lazy" />
+        <h3>Smart traffic monitoring</h3>
+        <p>YOLOv5 on Raspberry Pi edge devices streaming into a Flask service for lane prioritization and emergency-vehicle preemption. Built to survive patchy connectivity; cut simulated delays by 15%.</p>
+        <p class="tags">YOLOv5, Raspberry Pi, Flask, IoT</p>
+      </article>
+      <article class="tile">
+        <img src="img/soft-robots.jpg" alt="Spring-mass soft robot morphologies rendered as red nodes and white springs" width="1063" height="932" loading="lazy" />
+        <h3>Evolving soft robots</h3>
+        <p>Genetic algorithms that co-evolve the body and gait of spring-mass robots in simulation, tuned for faster convergence and more resilient walkers.</p>
+        <p class="tags">Python, evolutionary algorithms, physics simulation</p>
+      </article>
+    </div>
 
-						</div>
-					</section>
+    <h3 class="sub">More work</h3>
+    <ul class="index">
+      <li>
+        <a href="https://github.com/thakur-sachin/AI_Market_Simulation">LaunchLens</a>
+        <span>A synthetic market simulator: thousands of LLM-driven consumer agents, built from Indian census data, spread product adoption through a small-world social network.</span>
+        <em>Python, LLM agents, Redis, pgvector, 2026</em>
+      </li>
+      <li>
+        <span class="name">Autonomous quadruped</span>
+        <span>A low-cost quadruped with autonomous navigation and a stable gait, fusing IMU, LiDAR, and cameras for rough terrain. Funded by a $15,000 BITSAA grant.</span>
+        <em>Control, sensor fusion, BITS Pilani</em>
+      </li>
+      <li>
+        <a href="https://github.com/thakur-sachin/Smart_Movie_Setup">Smart Movie LED</a>
+        <span>Ambient lighting that samples what's on screen in radial slices and drives a WS2812B ring over USB serial or Raspberry Pi GPIO.</span>
+        <em>Python, Arduino, PipeWire, 2026</em>
+      </li>
+      <li>
+        <span class="name"><a href="https://github.com/thakur-sachin/Automated_Lampshade">Generative lampshades</a> and <a href="https://github.com/thakur-sachin/Digital_Embroidary">code-driven embroidery</a></span>
+        <span>Parametric CAD and embroidery patterns generated from code, then made real with 3D printing and an embroidery machine.</span>
+        <em>Blender, Python, additive manufacturing</em>
+      </li>
+    </ul>
+  </section>
 
-				<!-- Experience -->
-					<section id="experience" class="two">
-						<div class="container">
+  <!-- Publications -->
+  <section class="block" id="publications">
+    <h2>Publications</h2>
+    <article class="pub">
+      <p class="pub-venue">NeurIPS, Dec 2024</p>
+      <h3>End-to-end deep reinforcement learning platform for competitive physical dynamic systems</h3>
+      <p>A high-fidelity Isaac Sim foosball simulator with realistic dynamics and contact modeling, used to train competitive AI agents for a real table.</p>
+    </article>
+    <article class="pub pub-img">
+      <img src="img/cpps.jpg" alt="Instrumented 3D printer with labeled VOC, particulate, smoke, and motion sensors" width="552" height="447" loading="lazy" />
+      <div>
+        <p class="pub-venue">International Journal of Computer Integrated Manufacturing, Mar 2023</p>
+        <h3><a href="https://www.researchgate.net/publication/369275299_A_cyber_physical_production_system_framework_for_online_monitoring_visualization_and_control_by_using_cloud_fog_and_edge_computing_technologies/">A cyber-physical production system framework for online monitoring, visualization, and control using cloud, fog, and edge computing</a></h3>
+        <p>A tiered edge–fog–cloud architecture for a sensor-instrumented 3D printer, with severity-based storage, buffering, and prioritization for safer additive manufacturing.</p>
+      </div>
+    </article>
+  </section>
 
-							<header>
-								<h3>Professional Experience</h3>
-							</header>
+  <!-- Skills + education -->
+  <section class="block two-col" id="skills">
+    <div>
+      <h2>Toolkit</h2>
+      <dl class="skills">
+        <dt>Vision &amp; deep learning</dt>
+        <dd>PyTorch, TensorFlow, Vision Transformers, DINO-style SSL, panoptic segmentation, 6-DoF pose estimation, YOLO, ConvNeXt</dd>
+        <dt>Inference &amp; performance</dt>
+        <dd>ONNX, TensorRT, FP16 / INT8 quantization, pruning, NVIDIA Nsight, multi-GPU DDP</dd>
+        <dt>Robotics &amp; simulation</dt>
+        <dd>ROS 2, Isaac Sim, Isaac Lab, MuJoCo, Gazebo, PyBullet, URDF, RL (PPO, A3C, SAC), MPC, PID</dd>
+        <dt>Hardware</dt>
+        <dd>Jetson, Raspberry Pi, Arduino, IMUs, LiDAR, depth cameras, calibration</dd>
+        <dt>Engineering</dt>
+        <dd>Python, C++, Bash, FastAPI, Flask, Docker, Kubernetes, AWS, MLflow, HDF5, MCAP, MongoDB</dd>
+      </dl>
+    </div>
+    <div id="education">
+      <h2>Education</h2>
+      <div class="edu">
+        <h3>M.S. Mechanical Engineering</h3>
+        <p>Columbia University, 2023 – 2024. Minor in robotics and control.</p>
+        <p class="muted">Robotics, AI, applied robotics, Robot Studio, control theory, evolutionary algorithms</p>
+      </div>
+      <div class="edu">
+        <h3>B.E. Mechanical Engineering</h3>
+        <p>BITS Pilani, 2018 – 2022</p>
+        <p class="muted">Computer vision, nonlinear dynamics and chaos, IoT, additive manufacturing</p>
+      </div>
+    </div>
+  </section>
 
-							<div class="row">
-								<div class="col-12">
-									<article class="item">
-										<header>
-											<h4><strong>Machine Learning Scientist</strong> - Oxipital AI</h4>
-											<p><em>June 2024 – Present | Bedford, MA, USA</em></p>
-										</header>
-										<div style="text-align: left; margin-top: 1em;">
-											<h4>Vision Transformer Optimization</h4>
-											<ul>
-												<li>Implemented ReMaX-inspired panoptic segmentation optimizations reducing training time from 4 days to 2 days</li>
-												<li>Maintained identical PQ scores while reducing false positive rate by 15%</li>
-												<li>Applied strategic dropout to transformer blocks to prevent overfitting</li>
-											</ul>
-											<h4>High-Performance Inference Systems</h4>
-											<ul>
-												<li>Achieved 300ms → 100ms detection latency (3x speedup) through FP16 quantization and ONNX/TensorRT optimization</li>
-												<li>Deployed containerized inference services supporting real-time predictions</li>
-												<li>Designed sparse data representation reducing disk storage by 60%</li>
-											</ul>
-										</div>
-									</article>
-								</div>
-							</div>
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <img src="img/sachin.jpg" alt="Sachin Thakur" width="300" height="300" loading="lazy" />
+    <div>
+      <h2>Let's build something that moves.</h2>
+      <p>I'm open to conversations about robot learning, perception, and simulation, whether that's a role, a research collaboration, or a hard problem you're stuck on.</p>
+      <p class="contact-links">
+        <a class="btn btn-solid" href="mailto:sachint.2306@gmail.com">sachint.2306@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/sachin-thakur-22558017b/">LinkedIn</a>
+        <a class="btn" href="https://github.com/thakur-sachin">GitHub</a>
+      </p>
+    </div>
+  </section>
 
-							<div class="row">
-								<div class="col-12">
-									<article class="item">
-										<header>
-											<h4><strong>Analyst - AI & Data Engineering</strong> - Deloitte USI</h4>
-											<p><em>June 2022 – June 2023 | Bengaluru, Karnataka, India</em></p>
-										</header>
-										<div style="text-align: left; margin-top: 1em;">
-											<ul>
-												<li>Delivered scalable ML solutions including end-to-end time-series forecasting systems</li>
-												<li>Developed Monte Carlo simulation models for risk assessment influencing multi-million dollar decisions</li>
-												<li>Deployed ML models on AWS SageMaker with auto-scaling capabilities</li>
-												<li>Completed AWS AI/ML certification implementing best practices for secure, scalable cloud ML systems</li>
-											</ul>
-										</div>
-									</article>
-								</div>
-							</div>
+</main>
 
-							<div class="row">
-								<div class="col-12">
-									<article class="item">
-										<header>
-											<h4><strong>Visiting Researcher</strong> - TU Braunschweig</h4>
-											<p><em>November 2021 – December 2021 | Braunschweig, Germany</em></p>
-										</header>
-										<div style="text-align: left; margin-top: 1em;">
-											<ul>
-												<li>Mentored 20 students from Germany and India in developing sustainable EV business models</li>
-												<li>Explored Programmable Logic Controller (PLC) applications within Industry 4.0 paradigm</li>
-											</ul>
-										</div>
-									</article>
-								</div>
-							</div>
+<footer class="foot">
+  <p>Sachin Thakur, Boston, MA</p>
+  <p><a href="Sachin_Thakur_Resume.pdf">Résumé (PDF)</a></p>
+</footer>
 
-						</div>
-					</section>
-
-				<!-- Projects -->
-					<section id="projects" class="three">
-						<div class="container">
-
-							<header>
-								<h3>Featured Projects</h3>
-							</header>
-
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<div class="container">
-										<div class="card">
-											<div class="front" style="background-image: url('images/02.jpeg');"></div>
-											<div class="back">
-												<h4>Trex - Adaptive Walking Bipedal Robot</h4>
-												Technologies: Isaac Sim, ROS2, PyTorch, Docker, Embedded systems
-												<ul style="text-align: left; font-size: 0.8em;">
-													<li>Designed high-fidelity CAD model in Fusion 360</li>
-													<li>Developed complete sim-to-real control pipeline</li>
-													<li>Achieved bipedal locomotion using deep RL</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<div class="container">
-										<div class="card">
-											<div class="front" style="background-image: url('images/03.jpeg');"></div>
-											<div class="back">
-												<h4>Collaborative Delivery Robots</h4>
-												Technologies: Path Planning, OpenCV, SLAM, Arduino
-												<ul style="text-align: left; font-size: 0.8em;">
-													<li>Multi-agent path planning and task allocation</li>
-													<li>Autonomous mono-camera based navigation</li>
-													<li>Small package delivery system for competition</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<div class="container">
-										<div class="card">
-											<div class="front" style="background-image: url('images/04.jpeg');"></div>
-											<div class="back">
-												<h4>Smart Traffic Monitoring System</h4>
-												Technologies: YOLOv5, Flask, IoT, RasPi, OpenCV
-												<ul style="text-align: left; font-size: 0.8em;">
-													<li>Real-time vehicle detection & lane prioritization</li>
-													<li>Emergency vehicle prioritization system</li>
-													<li>15% reduction in simulated traffic delays</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-                        </br>
-							<div class="row">
-								<div class="col-6 col-12-mobile">
-									<div class="container">
-										<div class="card">
-											<div class="front" style="background-image: url('images/05.jpeg');"></div>
-											<div class="back">
-												<h4>Autonomous car driving</h4>
-												Technologies: OpenCV, SLAM, Navigation, Mechanical Actuation
-												<ul style="text-align: left; font-size: 0.8em;">
-													<li>Trained a modular self-driving car policy leveraging CNN-based lane detection</li>
-													<li>YOLO-powered object recognition, and multi-sensor fusion of LiDAR point clouds, RGB camera, and GPS</li>
-													<li>ROS 2, Python, and Numpy for robust, real-time path planning</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-6 col-12-mobile">
-									<div class="container">
-										<div class="card">
-											<div class="front" style="background-image: url('images/06.jpeg');"></div>
-											<div class="back">
-												<h4>Evolving Soft Robots</h4>
-												Technologies: Python, Matplotlib, Algorithms
-												<ul style="text-align: left; font-size: 0.8em;">
-													<li>Engineered evolutionary algorithms for optimizing robot morphology and locomotion in OpenGL custom built simulator.</li>
-													<li>Refined Genetic Algorithms through hyperparameter tuning, improving convergence speed and robot resilience.</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-
-				<!-- Publications -->
-					<section id="publications" class="three">
-						<div class="container">
-
-							<header>
-								<h3>Publications</h3>
-							</header>
-							<div class="row">
-								<div class="col-6 col-12-mobile">
-									<div class="container">
-										<div class="card">
-											<div class="front" style="background-image: url('images/07.jpeg');"></div>
-											<div class="back">
-												<h4>Deep RL Platform for Physical Dynamic Systems</h4>
-												Under Review: NeurIPS
-												<ul style="text-align: left; font-size: 0.8em;">
-													<li>Designed MuJoCo-based high-fidelity foosball simulator</li>
-													<li>Replicated real-world table dynamics using 3D models(URDF)</li>
-													<li>Advanced sim-to-real research in competitive control tasks</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-6 col-12-mobile">
-									<div class="container">
-										<div class="card">
-											<div class="front" style="background-image: url('images/08.jpeg');"></div>
-											<div class="back">
-												<h4>Cyber-Physical Production System</h4>
-												Published: IJCIM
-												<ul style="text-align: left; font-size: 0.8em;">
-													<li>Sensor array integration for additive manufacturing</li>
-													<li>Edge, fog, and cloud data storage architecture</li>
-													<li>Risk prevention methodology for safer manufacturing</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-				<!-- Education -->
-					<section id="education" class="two">
-						<div class="container">
-
-							<header>
-								<h3>Education</h3>
-							</header>
-							<div class="row">
-								<div class="col-6 col-12-mobile">
-												<h4>M.S. Mechanical Engineering</h4>
-												<p><strong>Columbia University</strong></p>
-												<p><em>Aug 2023 – Dec 2024 | New York, USA</em></p>
-												<ul style="text-align: left; font-size: 0.9em;">
-													<li>Minor: Robotics and Control</li>
-													<li>Advanced coursework in ML, control, and robotics</li>
-													<li>Research in sim-to-real transfer for robotics</li>
-												</ul>
-								</div>
-								<div class="col-6 col-12-mobile">
-												<h4>B.E. Mechanical Engineering</h4>
-												<p><strong>Birla Institute of Technology & Science</strong></p>
-												<p><em>Aug 2018 – May 2022 | Rajasthan, India</em></p>
-												<ul style="text-align: left; font-size: 0.9em;">
-													<li>President, Mechanical Engineering Association</li>
-													<li>Robotics and AI club lead</li>
-													<li>Capstone: Autonomous mobile robot</li>
-												</ul>
-								</div>
-							</div>
-						</div>
-					</section>
-
-				<!-- Skills -->
-					<section id="skills" class="four">
-						<div class="container">
-
-							<header>
-								<h3>Technical Skills</h3>
-							</header>
-
-							<div class="row">
-								<div class="col-6 col-12-mobile">
-									<h4>Deep Learning & Computer Vision</h4>
-									<ul style="text-align: left;">
-										<li><strong>Frameworks:</strong> PyTorch, TensorFlow, ONNX, TensorRT, OpenCV</li>
-										<li><strong>Architectures:</strong> Vision Transformers, YOLO, ResNet</li>
-										<li><strong>Optimization:</strong> Quantization (FP16/INT8), Model Pruning</li>
-									</ul>
-
-									<h4>Software Engineering</h4>
-									<ul style="text-align: left;">
-										<li><strong>Languages:</strong> Python, C++, SQL, Bash</li>
-										<li><strong>APIs:</strong> Flask, FastAPI, REST services</li>
-										<li><strong>Databases:</strong> MongoDB, S3</li>
-										<li><strong>Version Control:</strong> Git</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-mobile">
-									<h4>MLOps & Production Systems</h4>
-									<ul style="text-align: left;">
-										<li><strong>Containerization:</strong> Docker, Kubernetes</li>
-										<li><strong>Cloud Platforms:</strong> AWS (SageMaker, Lambda, S3)</li>
-										<li><strong>Monitoring:</strong> Neptune.ai, MLflow</li>
-										<li><strong>CI/CD:</strong> Jenkins, Git, Automated Testing</li>
-									</ul>
-
-									<h4>Robotics & Simulation</h4>
-									<ul style="text-align: left;">
-										<li><strong>Frameworks:</strong> ROS2, Isaac Sim, Gazebo, PyBullet, MuJoCo</li>
-										<li><strong>Hardware:</strong> Raspberry Pi, Jetson, Arduino, CUDA</li>
-										<li><strong>Control Systems:</strong> Reinforcement Learning (PPO, A3C), PID Control, MPC</li>
-									</ul>
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h3>Get In Touch</h3>
-							</header>
-
-							<p>I'm always interested in discussing new opportunities in machine learning, 
-							robotics, and computer vision. </br> Whether you're looking for a collaborator 
-							on cutting-edge research or need expertise in production ML systems, 
-							I'd love to hear from you.</p>
-
-							<div class="row">
-								<div class="col-6 col-12-mobile">
-									<h4>Contact Information</h4>
-									<ul style="text-align: left; list-style: none; padding-left: 0;">
-										<li><strong>Email:</strong> <a href="mailto:sachint.2306@gmail.com">sachint.2306@gmail.com</a></li>
-										<li><strong>Phone:</strong> <a href="tel:+13322762473">+1 (332) 276-2473</a></li>
-										<li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sachin-thakur-22558017b">sachin-thakur-22558017b</a></li>
-										<li><strong>Location:</strong> Bedford, MA, USA</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-mobile">
-									<h4>Resume</h4>
-									<a href="https://drive.google.com/file/d/1iivG_KDUKG4dPA5052a6hlXF2bcUVre2/view?usp=sharing">
-										<img src="images\Resume.jpg" alt="Resume.jpg" class="fixed-image">
-									</a>
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Credits for Website design.</li>
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<script src="assets/site.js"></script>
+</body>
 </html>
