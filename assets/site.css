@@ -147,6 +147,9 @@ li::marker { color: var(--servo); }
   align-items: center; margin-bottom: clamp(48px, 7vw, 88px);
 }
 .feature img { width: 100%; max-height: 620px; object-fit: cover; border-radius: 6px; }
+.walk { margin: calc(-1 * clamp(24px, 4vw, 56px)) 0 clamp(48px, 7vw, 88px); }
+.walk img { width: 100%; border-radius: 6px; background: var(--paper-2); }
+.walk figcaption { margin-top: 10px; font-size: 14px; color: var(--graphite); }
 .feature-flip { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); }
 .feature-flip img { order: 2; background: var(--white); object-fit: contain; padding: 12px; }
 .feature h3 { font-size: clamp(26px, 3vw, 34px); font-variation-settings: var(--wide); letter-spacing: -0.015em; margin-bottom: 16px; }
@@ -180,7 +183,8 @@ li::marker { color: var(--servo); }
 .pub p:last-child { color: var(--graphite); margin: 0; }
 .pub-venue { font-size: 14px; font-weight: 600; color: var(--servo); margin-bottom: 6px; }
 .pub-img { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 28px; }
-.pub-img img { border-radius: 6px; }
+.pub-img > * { min-width: 0; }
+.pub-img img { width: 100%; border-radius: 6px; }
 
 /* Skills & education ---------------------------------------------------- */
 .two-col { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: clamp(40px, 6vw, 88px); }
@@ -244,4 +248,14 @@ li::marker { color: var(--servo); }
 @media (max-width: 420px) {
   .mark { display: none; }
   .topbar { justify-content: center; }
+}
+
+/* Print / save as PDF ---------------------------------------------------- */
+@media print {
+  .topbar, .skip { position: static; }
+  .topbar nav, .hero-arm figcaption { display: none; }
+  .hero { min-height: 0; }
+  .job, .feature, .tile, .pub, .edu, .index li, .contact { break-inside: avoid; }
+  .contact { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  a { text-decoration: none; }
 }

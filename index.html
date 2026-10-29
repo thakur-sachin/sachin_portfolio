@@ -131,16 +131,24 @@
       <img src="img/trex.jpg" alt="Trex, a 3D-printed bipedal robot with a dinosaur shell, standing on a lab table" width="960" height="1280" loading="lazy" />
       <div class="feature-text">
         <h3>Trex, an adaptive bipedal robot</h3>
-        <p>A 1.6 kg, 10-DoF dinosaur biped I designed in Fusion 360, 3D-printed, and am teaching to walk with reinforcement learning in Isaac Sim, with every sim parameter tied to the real servos and sensors.</p>
+        <p>A 1.6 kg, 10-DoF dinosaur biped I designed in Fusion 360 and 3D-printed. Walking policies trained entirely in simulation now run on the real robot's own Raspberry Pi.</p>
         <ul>
-          <li>Asymmetric PPO: the policy sees only what the robot can sense (BNO055 IMU and LX-16A servo feedback), while the critic trains on privileged state.</li>
-          <li>In simulation with domain randomization, 98–100% of episodes survive 20 s of walking at 0–0.15 m/s, tracking commanded speed to within about 10%, with a symmetric gait.</li>
-          <li>Passive four-bar ankles, a servo model with torque limits and quantization, and a CAD-to-URDF-to-USD pipeline with automated verification reports.</li>
-          <li>Edge pipeline on Jetson and Raspberry Pi for IMU, motor telemetry, and control signals, ready for hardware-in-the-loop testing.</li>
+          <li>Asymmetric PPO in Isaac Sim 6, with a bit-identical Isaac Lab port: the policy sees only what the robot can sense (BNO055 IMU and LX-16A servo feedback), while the critic trains on privileged state.</li>
+          <li>Servo model fitted to the real servos, then refit to the robot's own walking logs (1.4° RMS). Every policy runs in MuJoCo through the exact Pi control loop before it touches hardware.</li>
+          <li>In simulation, 98–100% of episodes survive 20 s at 0–0.15 m/s. On the real floor the best policy has walked 0.41 m in 10 s; closing that sim-to-real speed gap is the current focus.</li>
         </ul>
-        <p class="tags">Isaac Sim 6, Isaac Lab, PyTorch, PPO, ROS 2, URDF / USD</p>
+        <p class="tags">Isaac Sim 6, Isaac Lab, MuJoCo, PyTorch, PPO, Raspberry Pi</p>
+        <p class="links"><a href="https://github.com/thakur-sachin/walking_trex_project">Source on GitHub</a></p>
       </div>
     </article>
+
+    <figure class="walk">
+      <picture>
+        <source srcset="img/trex-walk-poster.jpg" media="(prefers-reduced-motion: reduce)" />
+        <img src="img/trex-walk.webp" alt="Trex's legs stepping across a wooden floor under a learned policy" width="860" height="335" loading="lazy" />
+      </picture>
+      <figcaption>Trex walking on hardware with a policy trained only in simulation. Shown at 4× speed.</figcaption>
+    </figure>
 
     <article class="feature feature-flip">
       <img src="img/foosball-cad.jpg" alt="CAD model of a foosball table with motorized linear and rotary actuators on every rod" width="1400" height="948" loading="lazy" />
@@ -203,7 +211,7 @@
       </li>
       <li>
         <span class="name"><a href="https://github.com/thakur-sachin/Automated_Lampshade">Generative lampshades</a> and <a href="https://github.com/thakur-sachin/Digital_Embroidary">code-driven embroidery</a></span>
-        <span>Parametric CAD and embroidery patterns generated from code, then made real with 3D printing and an embroidery machine.</span>
+        <span>Lampshade models and embroidery patterns generated from code, then made real with 3D printing and an embroidery machine.</span>
         <em>Blender, Python, additive manufacturing</em>
       </li>
     </ul>
