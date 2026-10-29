@@ -22,7 +22,7 @@
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="topbar">
-  <a class="mark" href="#top" aria-label="Sachin Thakur, back to top">Sachin Thakur</a>
+  <a class="mark" href="#top" aria-label="Portfolio, back to top">Portfolio</a>
   <nav aria-label="Sections">
     <a href="#work">Experience</a>
     <a href="#projects">Projects</a>
@@ -60,7 +60,7 @@
 
   <!-- Highlights: the three outcomes a reader should leave with -->
   <section class="proof" aria-label="Highlights">
-    <p><strong>1 of 9 companies</strong> selected worldwide for the AWS × NVIDIA Physical AI program, on a data pipeline I co-built.</p>
+    <p><strong>1 of 9 companies</strong> selected worldwide for the AWS × NVIDIA Physical AI program, on a data pipeline I built.</p>
     <p><strong>300 → 110 ms</strong> end-to-end inference latency on a production vision transformer.</p>
     <p><strong>$15,000 grant</strong> from BITSAA to build a low-cost autonomous quadruped.</p>
   </section>
@@ -74,10 +74,10 @@
       <div class="job-body">
         <h3>Robotics Engineer, ML <span class="at">Luminous Robotics</span></h3>
         <ul>
-          <li>Co-built a Physical AI data-collection pipeline that helped the company win an AWS and NVIDIA grant; we were one of nine companies selected globally and now work directly with both teams on the challenge.</li>
-          <li>Building digital twins in NVIDIA Isaac Sim for robot simulation, synthetic data collection, and testing as part of a Digital Twin fellowship.</li>
+          <li>Built the Physical AI data-collection pipeline behind the company's AWS × NVIDIA grant, one of nine companies selected globally; I now work directly with both teams on the challenge.</li>
+          <li>Build digital twins in NVIDIA Isaac Sim for robot simulation, synthetic data collection, and testing as part of a Digital Twin fellowship.</li>
           <li>Implemented and fine-tuned 6-DoF pose estimators (FoundationPose, EfficientPose, CenterPose, DOPE) for robust real-world performance.</li>
-          <li>Support the full robot stack: ROS 2, networking, deployment, calibration, and debugging.</li>
+          <li>Maintain and debug the full robot stack: ROS 2, networking, deployment, and calibration.</li>
         </ul>
       </div>
     </article>
@@ -87,10 +87,10 @@
       <div class="job-body">
         <h3>Machine Learning Scientist <span class="at"><a href="https://www.oxipitalai.com/">Oxipital AI</a></span></h3>
         <ul>
-          <li>Implemented ReMaX-inspired panoptic segmentation optimizations (ReMask + ReClass) in PyTorch: training time down from 4 to 3 days, PQ held, false positives down 15%.</li>
-          <li>Developed a DINOv3-style self-supervised backbone and the data infrastructure for training a foundation vision model.</li>
+          <li>Cut panoptic segmentation training from 4 to 3 days and false positives by 15%, with PQ held, by implementing ReMaX-inspired optimizations (ReMask + ReClass) in PyTorch.</li>
+          <li>Built a DINOv3-style self-supervised backbone and the data infrastructure for training a foundation vision model.</li>
           <li>Redesigned the vision transformer for memory-efficient, variable-resolution training; higher-resolution inputs raised PQ by 5% at comparable cost.</li>
-          <li>Designed binary and sparse HDF5 representations for high-volume sensor data, cutting storage by about 60% while speeding up training and inference.</li>
+          <li>Cut sensor-data storage by about 60% by designing binary and sparse HDF5 representations, which also sped up training and inference.</li>
           <li>Led the inference pipeline redesign across GPU, container, and on-prem environments:</li>
         </ul>
         <div class="latency" role="img" aria-label="End-to-end inference latency: 300 milliseconds at baseline, 200 after FP16 and ONNX/TensorRT, about 110 after Nsight-guided tuning.">
@@ -117,7 +117,7 @@
       <div class="job-body">
         <h3>Visiting Researcher <span class="at">TU Braunschweig</span></h3>
         <ul>
-          <li>Mentored 20 students from Germany and India on sustainable EV business models and explored PLC applications for Industry 4.0.</li>
+          <li>Mentored 20 students from Germany and India on sustainable EV business models and researched PLC applications for Industry 4.0.</li>
         </ul>
       </div>
     </article>
@@ -133,8 +133,8 @@
         <h3>Trex, an adaptive bipedal robot</h3>
         <p>A 1.6 kg, 10-DoF dinosaur biped I designed in Fusion 360 and 3D-printed. Walking policies trained entirely in simulation now run on the real robot's own Raspberry Pi.</p>
         <ul>
-          <li>Asymmetric PPO in Isaac Sim 6, with a bit-identical Isaac Lab port: the policy sees only what the robot can sense (BNO055 IMU and LX-16A servo feedback), while the critic trains on privileged state.</li>
-          <li>Servo model fitted to the real servos, then refit to the robot's own walking logs (1.4° RMS). Every policy runs in MuJoCo through the exact Pi control loop before it touches hardware.</li>
+          <li>Trained with asymmetric PPO in Isaac Sim 6 and ported the setup bit-identically to Isaac Lab: the policy sees only what the robot can sense (BNO055 IMU and LX-16A servo feedback), while the critic trains on privileged state.</li>
+          <li>Fitted a servo model to the real servos, then refit it to the robot's own walking logs (1.4° RMS). Built a MuJoCo check that runs every policy through the exact Pi control loop before it touches hardware.</li>
           <li>In simulation, 98–100% of episodes survive 20 s at 0–0.15 m/s. On the real floor the best policy has walked 0.41 m in 10 s; closing that sim-to-real speed gap is the current focus.</li>
         </ul>
         <p class="tags">Isaac Sim 6, Isaac Lab, MuJoCo, PyTorch, PPO, Raspberry Pi</p>
@@ -156,9 +156,9 @@
         <h3>Foosball AI at Columbia</h3>
         <p>A robot that plays professional foosball. I built the high-fidelity Isaac Sim simulator, with realistic table dynamics and contact modeling, used to train the RL agents that drive motorized rods on the real table.</p>
         <ul>
-          <li>Physical table modeled from CAD to URDF so policies transfer from sim to real.</li>
+          <li>Modeled the physical table from CAD to URDF so policies transfer from sim to real.</li>
           <li>Soft actor-critic agents trained through protagonist–antagonist self-play, driving ClearPath servo motors on the real rods.</li>
-          <li>Presented as an end-to-end deep RL platform for competitive physical systems (NeurIPS 2024).</li>
+          <li>Co-authored the NeurIPS 2024 paper presenting it as an end-to-end deep RL platform for competitive physical systems.</li>
         </ul>
         <p class="tags">Isaac Lab, MuJoCo, Stable-Baselines3, C++, SolidWorks</p>
         <p class="links"><a href="https://github.com/thakur-sachin/Foosball_CU">Source on GitHub</a></p>
@@ -175,19 +175,19 @@
       <article class="tile">
         <img src="img/autonomous-car.jpg" alt="RViz view of a vehicle's planned path and LiDAR obstacles" width="1400" height="681" loading="lazy" />
         <h3>Autonomous driving stack</h3>
-        <p>A modular self-driving pipeline: CNN lane detection, YOLO object recognition, and fusion of LiDAR, RGB camera, and GPS for real-time path planning in ROS 2.</p>
+        <p>Built a modular self-driving pipeline: CNN lane detection, YOLO object recognition, and fusion of LiDAR, RGB camera, and GPS for real-time path planning in ROS 2.</p>
         <p class="tags">ROS 2, YOLO, sensor fusion, NumPy</p>
       </article>
       <article class="tile">
         <img src="img/detector.jpg" alt="Object detector output with bounding boxes at 97 and 99 percent confidence" width="1267" height="872" loading="lazy" />
         <h3>Smart traffic monitoring</h3>
-        <p>YOLOv5 on Raspberry Pi edge devices streaming into a Flask service for lane prioritization and emergency-vehicle preemption. Built to survive patchy connectivity; cut simulated delays by 15%.</p>
+        <p>Deployed YOLOv5 on Raspberry Pi edge devices, streaming into a Flask service for lane prioritization and emergency-vehicle preemption. Designed it to survive patchy connectivity and cut simulated delays by 15%.</p>
         <p class="tags">YOLOv5, Raspberry Pi, Flask, IoT</p>
       </article>
       <article class="tile">
         <img src="img/soft-robots.jpg" alt="Spring-mass soft robot morphologies rendered as red nodes and white springs" width="1063" height="932" loading="lazy" />
         <h3>Evolving soft robots</h3>
-        <p>Genetic algorithms that co-evolve the body and gait of spring-mass robots in simulation, tuned for faster convergence and more resilient walkers.</p>
+        <p>Wrote genetic algorithms that co-evolve the body and gait of spring-mass robots in simulation, tuned for faster convergence and more resilient walkers.</p>
         <p class="tags">Python, evolutionary algorithms, physics simulation</p>
       </article>
     </div>
@@ -201,7 +201,7 @@
       </li>
       <li>
         <span class="name">Autonomous quadruped</span>
-        <span>A low-cost quadruped with autonomous navigation and a stable gait, fusing IMU, LiDAR, and cameras for rough terrain. Funded by a $15,000 BITSAA grant.</span>
+        <span>A low-cost quadruped with autonomous navigation and a stable gait, fusing IMU, LiDAR, and cameras for rough terrain. Won a $15,000 BITSAA grant to build it.</span>
         <em>Control, sensor fusion, BITS Pilani</em>
       </li>
       <li>
