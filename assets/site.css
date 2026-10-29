@@ -182,7 +182,7 @@ li::marker { color: var(--servo); }
 .pub h3 { font-size: 21px; margin-bottom: 10px; line-height: 1.25; }
 .pub p:last-child { color: var(--graphite); margin: 0; }
 .pub-venue { font-size: 14px; font-weight: 600; color: var(--servo); margin-bottom: 6px; }
-.pub-img { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 28px; }
+.pub-img { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: clamp(24px, 4vw, 48px); align-items: start; }
 .pub-img > * { min-width: 0; }
 .pub-img img { width: 100%; border-radius: 6px; }
 
@@ -241,7 +241,7 @@ li::marker { color: var(--servo); }
   .lat-label { grid-column: 1 / -1; margin-bottom: -6px; }
   .latency { margin-left: 0; }
   .pub-img { grid-template-columns: 1fr; }
-  .pub-img img { max-width: 260px; }
+  .pub-img img { max-width: 460px; }
   .contact { grid-template-columns: 1fr; border-radius: 0; }
   .contact img { width: 112px; height: 112px; }
 }
